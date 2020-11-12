@@ -2,9 +2,14 @@ import React from 'react';
 
 import './Profile.css';
 
+import NavBar from './../NavBar/NavBar';
+
 const Profile = () => {
     return(
-        <div>Profile Page</div>
+        <div>
+            <NavBar />
+            Profile Page
+        </div>
     )
 }
 
