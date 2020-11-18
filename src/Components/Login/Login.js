@@ -5,11 +5,12 @@ import './Login.css';
 
 const Login = () => {
     return(
-        <div>
-            <div className="Login Inputs">
+        <div className="Main">
+            <div className="Inputs">
+                <span>TMLNE</span>
                 <input type="text" placeholder="Email"/>
                 <input type="password" placeholder="Password" />
-                <Link to="/home"><span>Login</span></Link>
+                <div id="Enter-Button"><Link to="/home"><span>Login</span></Link></div>
                 <span>Don't have an account? <Link to="/register">Register here:</Link></span>
             </div>
         </div>

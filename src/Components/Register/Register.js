@@ -1,16 +1,19 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import './Register.css';
+import './../Login/Login.css';
 
 const Register = () => {
     return(
-        <div>
-            <input type="text" placeholder="Email"/>
-            <input type="password" placeholder="Password" />
-            <input type="password" placeholder="Retype Password" />
-            <Link to="/home"><span>Create Account</span></Link>
-            <span>Already registered? <Link to="/">Login here:</Link></span>
+        <div className="Main">
+            <div className="Inputs">
+                <span>TMLNE</span>
+                <input type="text" placeholder="Email"/>
+                <input type="password" placeholder="Password" />
+                <input type="password" placeholder="Retype Password" />
+                <div id="Enter-Button"><Link to="/home"><span>Create Account</span></Link></div>
+                <span>Already registered? <Link to="/">Login here:</Link></span>
+            </div>
         </div>
     )
 }
