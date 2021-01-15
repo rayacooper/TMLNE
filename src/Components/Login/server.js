@@ -10,6 +10,12 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors());
 
+// endpoints
+
+app.get('/ping', (req, res) => {
+    res.send("Hello!")
+})
+
 const port = process.env.PORT;
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)

@@ -1,13 +1,14 @@
 import React from 'react';
 
-import NavBar from './../NavBar/NavBar';
+import './Event.css';
 
-import './Event.css'
-
-const Event = () => {
+function Event(param) {
     return(
         <div>
-            <NavBar />
+            <span className="Title">{param.title}</span>
+            <span className="Date">{param.date}</span>
+            <span>{param.location}</span>
+            <span className="Description">{param.description}</span>
         </div>
     )
 }
