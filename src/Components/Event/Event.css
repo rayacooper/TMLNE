@@ -1,0 +1,20 @@
+.EventItem {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 30vh;
+    background-color: blueviolet;
+    margin: 10vh;
+    border-radius: 4px;
+}
+
+.Title {
+    font-size: 21px;
+}
+
+@media only screen and (min-width: 800px) {
+    .EventItem {
+        width: 40vw;
+        margin: 5vh 5vh 0vh 15vh;
+    }
+  }

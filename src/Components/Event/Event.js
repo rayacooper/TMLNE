@@ -4,7 +4,7 @@ import './Event.css';
 
 function Event(param) {
     return(
-        <div>
+        <div className="EventItem">
             <span className="Title">{param.title}</span>
             <span className="Date">{param.date}</span>
             <span>{param.location}</span>

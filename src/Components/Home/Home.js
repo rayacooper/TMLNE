@@ -4,6 +4,7 @@ import axios from 'axios';
 import './Home.css';
 
 import NavBar from './../NavBar/NavBar';
+import Event from './../Event/Event';
 
 let events = [
     {
@@ -20,12 +21,19 @@ let events = [
     }];
 
 const Home = () => {
+
+    let eventsList = events.map((e, i) => {
+        return <Event key={i} title={e.title} date={e.date} location={e.location} description={e.description}/>
+    }) 
+
     return(
         <div>
             <NavBar />
             <div className="MyTimeline">
-                <span>{events[0].name}</span>
-                <span>{events[1].name}</span>
+                {eventsList}
+            </div>
+            <div className="TimelineOptions">
+                <button>Add Timeline Event</button>
             </div>
             <button onClick = {() => axios.get('/ping')
                                         .then((response) => console.log(response.data))}>Check to see if it's working!</button>
