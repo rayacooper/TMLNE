@@ -18,6 +18,12 @@ let events = [
         date: "July 25 2015",
         location: "American Fork, UT",
         description: "I married my sweetheart."
+    },
+    {
+        title: "I got married",
+        date: "July 25 2015",
+        location: "American Fork, UT",
+        description: "I married my sweetheart."
     }];
 
 const Home = () => {
