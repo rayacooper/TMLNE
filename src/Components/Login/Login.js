@@ -5,7 +5,7 @@ import './Login.css';
 
 const Login = () => {
 
-    const [userName, updateUserName] = useState('');
+    const [email, updateEmail] = useState('');
     const [password, updatePassword] = useState('');
 
     return(
@@ -13,10 +13,10 @@ const Login = () => {
             <div className="Inputs">
                 <span>TMLNE</span>
                 <input type="text" placeholder="Email" 
-                    onChange={e => updateUserName(e.target.value)}/>
+                    onChange={e => updateEmail(e.target.value)}/>
                 <input type="password" placeholder="Password" 
                     onChange={e => updatePassword(e.target.value)}/>
-                <span id="Enter-Button" onClick={() => console.log(userName, password)}><Link to="/home">Login</Link></span>
+                <span id="Enter-Button" onClick={() => console.log(email, password)}><Link to="/home">Login</Link></span>
                 <span>Don't have an account? <Link to="/register">Register here:</Link></span>
             </div>
         </div>
